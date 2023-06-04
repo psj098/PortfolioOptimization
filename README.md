@@ -1,14 +1,15 @@
 # Portfolio Optimization Tool
 
-This project implements a portfolio optimization tool based on Modern Portfolio Theory, developed by Harry Markowitz. The tool uses historical stock data from S&P 500, Nasdaq Composite, and Dow Jones Industrial Average (DJIA) to calculate the optimal portfolio weights that minimize portfolio risk for a given expected return.
+This project implements a portfolio optimization tool based on Modern Portfolio Theory, developed by Harry Markowitz. The tool utilizes historical stock data from three key indices - S&P 500, Nasdaq Composite, and Dow Jones Industrial Average (DJIA), to calculate optimal portfolio weights. These weights aim to mitigate portfolio risk while securing a specified expected return.
 
 ## Features
 
-- User provides a list of stock tickers and their desired minimum weight allocation for each stock in their portfolio.
-- The tool determines the range of possible returns based on the minimum weights and prompts the user to specify the desired expected return.
-- Mathematical optimization techniques, utilizing the `scipy` library, are employed to determine the optimal portfolio composition that achieves the user's desired return while minimizing portfolio risk.
-- The tool enforces constraints such as ensuring the sum of weights for all stocks in the portfolio adds up to 1 and no individual weight falls below the user-defined minimum.
-- Historical stock data is fetched from the `yahoo_fin` library.
+- <b>Custom Stock Selection</b>: Users can input their preferred stock tickers to tailor the portfolio.
+- <b>Defined Weight Allocations</b>: Users can set a desired minimum weight allocation for each stock in the portfolio.
+- <b>Expected Return</b>: The tool calculates the range of possible returns, taking into account the minimum weights, and requests the user to indicate the desired expected return.
+- <b>Optimal Portfolio Composition</b>: Utilizing mathematical optimization techniques with the `scipy` library, the tool determines the optimal portfolio composition that achieves the user's desired return while reducing portfolio risk.
+- <b>Portfolio Weight Constraints</b>: The tool ensures that the sum of the weights of all stocks in the portfolio equals 1 and that no individual weight is less than the user-defined minimum.
+- <b>Reliable Data Source</b>: Historical stock data is procured from the `yahoo_fin` library.
 
 ## How to Use
 

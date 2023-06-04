@@ -36,21 +36,18 @@ def main():
 
     # Prepare portfolio data for optimization
     return_data, risk_data, cov_matrix_input = prepare_portfolio_data(
-        return_risk_data, valid_tickers, return_df
-    )
+        return_risk_data, valid_tickers, return_df)
 
     # Calculate possible return range based on user-inputted minimum weights
     min_return, max_return = calculate_return_range(
-        min_weights, return_risk_data, valid_tickers, return_data
-    )
+        min_weights, return_risk_data, valid_tickers, return_data)
 
     # Get user's desired expected return within the calculated range
     user_return = get_user_desired_return(min_return, max_return)
 
     # Optimize portfolio based on user's input and calculated data
     optimal_portfolio, portfolio_return, portfolio_std_dev = optimize(
-        min_weights, valid_tickers, cov_matrix_input, return_data, user_return
-    )
+        min_weights, valid_tickers, cov_matrix_input, return_data, user_return)
 
     # Display portfolio optimization results 
     display_output(valid_tickers, optimal_portfolio,
