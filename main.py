@@ -13,7 +13,7 @@ from user_input import get_user_input
 from prepare_data import prepare_portfolio_data
 from input_processing import calculate_return_range, get_user_desired_return
 from portfolio_optimize import optimize
-from results import display_output
+from results import display_output, plot_portfolio
 
 warnings.filterwarnings('ignore')
 
@@ -51,6 +51,10 @@ def main():
 
     # Display portfolio optimization results 
     display_output(valid_tickers, optimal_portfolio,
+                   portfolio_return, portfolio_std_dev)
+    
+    # Plot portfolio optimization results 
+    plot_portfolio(valid_tickers, optimal_portfolio,
                    portfolio_return, portfolio_std_dev)
 
 if __name__ == "__main__": 
