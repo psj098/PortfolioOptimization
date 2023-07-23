@@ -20,3 +20,43 @@ This project implements a portfolio optimization tool based on Modern Portfolio 
 5. The script will print out the optimal weights for the portfolio, along with the portfolio's expected return and associated standard deviation.
 
 Please note that this script assumes the user has a basic understanding of financial markets and Modern Portfolio Theory. It is important to emphasize that this tool should not be used as financial advice.
+
+#### Usage Example
+Number of stocks in S&P 500: 503<br>
+Number of stocks in Nasdaq Composite: 5181<br>
+Number of stocks in DJIA: 30
+
+Tickers of the stocks (separated by space): AAPL MSFT NVDA AMZN KO GOOG MA JPM META TSLA<br>
+Enter min. weight for AAPL (0 - 1): 0.03<br>
+Enter min. weight for AMZN (0 - 1): 0.04<br>
+Enter min. weight for NVDA (0 - 1): 0.05<br>
+Enter min. weight for KO (0 - 1): 0.10<br>
+Enter min. weight for MA (0 - 1): 0.01<br>
+Enter min. weight for GOOG (0 - 1): 0.02<br>
+Enter min. weight for TSLA (0 - 1): 0.05<br>
+Enter min. weight for MSFT (0 - 1): 0.05<br>
+Enter min. weight for JPM (0 - 1): 0.02<br>
+Enter min. weight for META (0 - 1): 0.03
+
+Enter desired expected return (between 0.1521 and 0.4717): 0.28
+
+Optimal portfolio weights:<br>
+AAPL : 9.12%<br>
+AMZN : 9.84%<br>
+NVDA : 12.92%<br>
+KO   : 14.95%<br>
+MA   : 6.70%<br>
+GOOG : 7.54%<br>
+TSLA : 11.69%<br>
+MSFT : 11.04%<br>
+JPM  : 7.21%<br>
+META : 8.99%
+
+Portfolio Optimized!<br>
+Portfolio return: 28.0000%<br>
+Portfolio standard deviation: 2.4073%
+
+![portfolio-optimization-result](https://raw.githubusercontent.com/psj098/PortfolioOptimization/master/portfolio_pie_chart.png)
+
+
+
